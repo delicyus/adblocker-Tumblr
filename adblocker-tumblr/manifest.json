@@ -1,0 +1,20 @@
+{
+
+  "manifest_version": 2,
+  "name": "AdBlocker-Tumblr",
+  "version": "1.0",
+
+  "description": "Hide ads posts from Tumblr dashboard.",
+
+  "icons": {
+    "32": "icons/adblocker-tumblr-32.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.tumblr.com/*"],
+      "js": ["adblockerTumblr.js"]
+    }
+  ]
+
+}
